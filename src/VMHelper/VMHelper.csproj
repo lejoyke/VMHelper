@@ -5,14 +5,22 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>VMHelper</PackageId>
+    <Title>VMHelper</Title>
     <Authors>Lejoy</Authors>
     <Description>该类库封装了与VMTCP通讯的类库</Description>
     <PackageIcon>VM.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageOutputPath>D:\Code\NuGet\VMHelper</PackageOutputPath>
+    <PackageOutputPath>..\..\doc\nuget</PackageOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>1.0.7</Version>
+    <Version>2.0.0</Version>
     <PackageReleaseNotes>优化ITcp接口类,解决清除缓存器bug</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/lejoyke/VMHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lejoyke/VMHelper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>tcp;vm;socket;communication;dotnet</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,14 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="VM.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
+    <None Include="..\..\doc\nuget\VM.png" Pack="True" PackagePath="\" />
   </ItemGroup>
 
 </Project>
